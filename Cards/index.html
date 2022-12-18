@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+  <head>
+    <div id="vanta"></div>
+    
+<body>
+<div class="container">
+<div class="card" data-tilt data-tilt-scale="1.1">
+<img src="/imges/images (18).jpeg"alt="Dog">
+<div class="intro">
+
+   
+    <h1>Dog</h1>
+    <p> 
+    The <span> Dog</span> is a domesticated descendant of the wolf.
+     and the first species to be domesticated by hunter-gatherers 
+    over 15,000 years ago before the development of agriculture.
+    </p>
+</div>
+</div>
+
+
+<div class="card"data-tilt="">
+    <img src="/imges/images (19).jpeg"alt="Monkey">
+    <div class="intro">
+        <h1>Monkey</h1>
+    <p>
+      The <span>Monkey</span> is a common name that may refer to most mammals of the infraorder Simiiformes, also known as the simians. 
+      Traditionally,except the apes.
+    </p>
+    </div>
+    </div>
+
+
+
+    <div class="card"data-tilt="">
+        <img src="/imges/jean-wimmerlin-FC4GY9nQuu0-unsplash.jpg"alt="Lion">
+        <div class="intro">
+            <h1>Lion</h1>
+        <p> The  <span>lion</span> (Panthera leo) is a large cat of the genus Panthera native to Africa and India.
+           It has a muscular, broad-chested body, short, rounded head, round ears,
+            and a hairy tuft.</p>
+        </div>
+        </div>
+</div>
+<script src="vanilla-tilt.js"></script>
+
+<script>
+    window.addEventListener("DOMContentLoaded", ()=>{
+      VANTA.BIRDS({
+        el:"#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        wingSpan: 40.00,
+        speedLimit: 8.00,
+        separation: 100.00,
+        alignment: 43.00,
+        quantity: 3.00,
+        backgroundAlpha:0.0,
+      })
+      setTimeout(()=>{
+      document.querySelector('main').style.opacity='1';
+      document.querySelector('main').style.filter='none';
+      },1000)
+    })
+  </script>
+</head>
+</body>
+</html>
